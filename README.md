@@ -23,5 +23,6 @@ In addition to the main application, several utilities have been implemented to 
   <li><b>Data Manipulation:</b> to randomize, filter, extract annotation layer, and other utilities required for preparing labeled and unlabeled data for the experiments</li>
 </ul>
 
-| Argument | Description | Values/Comments | S1 | S2 | C1 | C2 |
+| Argument | Description | Values/Comments | S1    | S2    | C1    | C2   |
+| :---     |     :---:   | :---:           | :---: | :---: | :---: | ---: |
 
