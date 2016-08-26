@@ -22,3 +22,13 @@ In addition to the main application, several utilities have been implemented to 
   <li><b>Evaluating and collecting scores:</b> The evaluation is based on CoNLL 2005 shared tasks scripts. The utilities evaluate several files output from iterative procedures and collect the data for each iteration from application logs including the amount of data used for training in each iteration.</li>
   <li><b>Data Manipulation:</b> to randomize, filter, extract annotation layer, and other utilities required for preparing labeled and unlabeled data for the experiments</li>
 </ul>
+
+|	    Argument
+|	    Description
+|	    Values/Comments
+|	    S1
+|	    S2
+|	    C1
+|	    C2
+|
+
