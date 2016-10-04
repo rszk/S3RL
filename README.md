@@ -16,17 +16,19 @@ Accordingly, four applications have been implemented to fulfill the objective:
 </ul> 
 
 Each application includes training and testing procedures starting from loading labeled and unlabeled data to labeling the test data. The entire procedures are fully logged into related files for further analysis. To have a comprehensive experimental framework, several parameters are incorporated into the system, especially because of large number of parameters involved explicitly and implicitly in these bootstrapping algorithms. The table in the bottom lists and describes these parameters as input arguments to applications.
-
+<br/>
+<br/>
 In addition to the main application, several utilities have been implemented to support and facilitate the experiments: 
-
+<br/>
+<br/>
 <ul>
   <li><b>Learning Curves:</b> to examine the supervised learning curve of the classifier based on custom amounts of labeled data in each step</li>
   <li><b>Converters:</b> to convert between involved input formats including Charniak parser, OANC sentences, CoNLL format, LTH dependency converter, MaltParser, etc.</li>
   <li><b>Evaluating and collecting scores:</b> The evaluation is based on CoNLL 2005 shared tasks scripts. The utilities evaluate several files output from iterative procedures and collect the data for each iteration from application logs including the amount of data used for training in each iteration.</li>
   <li><b>Data Manipulation:</b> to randomize, filter, extract annotation layer, and other utilities required for preparing labeled and unlabeled data for the experiments</li>
 </ul>
-
-
+<br/>
+<br/>
 <h3>Parameters</h3>
 
 
@@ -79,8 +81,10 @@ S2: SelfTrain2
 C1: CoTrain1  
 C2: CoTrain2  
 
-
-<h4>References</h4>
+<br/>
+<br/>
+<br/>
+<h3>References</h3>
 
 Rasoul Kaljahi. 2010.  
 Adapting self-training for semantic role labeling.  
