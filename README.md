@@ -4,7 +4,7 @@
 
 S3RL is primarily designed to provide an experimental framework for semi-supervised learning of semantic role labeling. Currently, it implements self-training and co-training algorithms, each of which is based on two algorithm variations: sample-based approach and sentence-based approach. The former selects individual samples based on selection criteria, whereas the latter selects sentences based on average confidence score of labeling of its individual samples to impose a balance between selected roles (Kaljahi, 2010). The co-training algorithm is based on two syntactic views of SRL problem: constituency and dependency, with about 60 learning features in customizable sets.
 
-Accordingly, four applications have been implemented to fulfill the objective:
+Accordingly, four applications have been implemented to fulfill the objective:  
 <ul>
   <li><b>SelfTrain1:</b> the sentence-based self-training application</li>
   <li><b>SelfTrain2:</b> the sample-based self-training application</li>
@@ -24,7 +24,7 @@ In addition to the main application, several utilities have been implemented to 
 </ul>
 
 
-<h3>Parmaeters</h3>
+<h3>Parameters</h3>
 
 | Argument | Description | Values/Comments | S1    | S2    | C1    |  C2   |
 | :---     | :---        | :---            | :---: | :---: | :---: | :---: |
@@ -68,4 +68,17 @@ In addition to the main application, several utilities have been implemented to 
 |   -tbrws | CoNLL brown test constituency parse file  |               - |     y |     y |     y |     y | 
 |   -tbrwd | CoNLL brown test dependency syntax file |               - |     y |     y |     y |     y | 
 |   -tbrwp | CoNLL brown test proposition file |               - |     y |     y |     y |     y | 
+  
+  
+S1: SelfTrain1  
+S2: SelfTrain2  
+C1: CoTrain1  
+C2: CoTrain2  
+
+
+<h4>References</h4>
+
+Rasoul Kaljahi. 2010.  
+Adapting self-training for semantic role labeling.  
+In Proceedings of the ACL 2010 Student Research Workshop, Annual Meeting of the Association for Computational Linguistics, Uppsala, Sweden, pages 91-96.
 
