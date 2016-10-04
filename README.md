@@ -1,6 +1,6 @@
 <h3>BEING UPDATED<h3>
 
-<h2>S3RL: Semi-supervised Semantic Role Labeling</h2>
+<h2>S3RL: Semi-supervised Semantic Role Labeling System</h2>
 
 S3RL is primarily designed to provide an experimental framework for semi-supervised learning of semantic role labeling. Currently, it implements <i>self-training</i> and <i>co-training</i> algorithms, each of which is based on two algorithm variations: <i>sample-based</i> approach and <i>sentence-based</i> approach. The former selects individual samples based on selection criteria, whereas the latter selects sentences based on average confidence score of labeling of its individual samples to impose a balance between selected roles (Kaljahi, 2010). The co-training algorithm is based on two syntactic views of SRL problem: constituency and dependency, with about 60 learning features in customizable sets.
 <br/>
@@ -28,7 +28,7 @@ In addition to the main application, several utilities have been implemented to 
   <li><b>Data Manipulation:</b> to randomize, filter, extract annotation layer, and other utilities required for preparing labeled and unlabeled data for the experiments</li>
 </ul>
 
-
+<br/>
 <h3>Parameters</h3>
 
 | Argument | Description | Values/Comments | S1    | S2    | C1    |  C2   |
@@ -81,6 +81,7 @@ C1: CoTrain1
 C2: CoTrain2  
 
 
+<br/>
 <h3>References</h3>
 
 Rasoul Kaljahi. 2010.  
