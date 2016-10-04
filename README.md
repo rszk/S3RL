@@ -26,6 +26,46 @@ In addition to the main application, several utilities have been implemented to 
 
 <h3>Parmaeters</h3>
 
-| Argument | Description | Values/Comments | S1    | S2    | C1    | C2   |
-| :---     |     :---:   | :---:           | :---: | :---: | :---: | ---: |
+| Argument | Description | Values/Comments | S1    | S2    | C1    |  C2   |
+| :---     | :---        | :---            | :---: | :---: | :---: | :---: |
+|       -s | Seed size   |               - |     y |     y |     y |     y | 
+|       -u | Unlabeled size | 0 for supervised SRL |     y |     y |     y |     y | 
+|     -mxp | Maximum positive samples |               - |     y |     y |     y |     y | 
+|     -mxn | Maximum negative samples |               - |     y |     y |     y |     y | 
+|      -fs | Feature set | Number of customized feature set |     y |     y |     y |     y | 
+|      -go | Global optimization | 0: no / 1: yes |     y |     y |     y |     y | 
+|      -mi | ME iteration number |               - |     y |     y |     y |     y | 
+|      -mp | ME parameter estimation method | lbfgs /gis |     y |     y |     y |     y | 
+|       -g | ME Gaussian parameter |               - |     y |     y |     y |     y | 
+|      -sc | Selection criteria | 0: selecting all labeled data <br />1: agreement-based (only co.) <br />2: confidence-based (only co.) |     y |     y |     y |     y | 
+|       -c | Co-training method | 1: common training set <br />2: separate training sets | - | - |     y |     y | 
+|      -cl | Common label selection method | 1: agreement-only <br />2: agreement-confidence <br />3: confidence-only | - | - |     y |     y | 
+|       -p | Pool size | 0 for no pool |     y |     y |     y |     y | 
+|      -pu | Pool usage | 1: iterate to use all <br />2: iterate once and remove unselected <br />3: iterate once and return unselected to the beginning of unlabeled set <br />4: iterate once and return unselected to the end of unlabeled set  |     y |     y |     y |     y | 
+|      -pq | Preselection method | 0: original order <br />1: shortest sentence first <br />2: mediate length first <br />3: less-constituent first |     y | - |     y | -| 
+|      -pt | Score probability threshold | 0 for no threshold |     y |     y |     y |     y | 
+|      -at | Agreement threshold | 1 for full agreement on the sentence | - | - |     y | -| 
+|      -nt | Growth size | 0 for no growth size |     y |     y |     y |     y | 
+|       -r | Delibility / indelibility | 0 / 1 |     y |     y |     y |     y | 
+|      -si | Explicit iteration number | 0 if not used |     y |     y |     y |     y | 
+|      -ls | Log labeling selection in each iteration | 0: don't log <br />1: selected only <br />2: selected and filtered |     y |     y |     y |     y | 
+|     -tst | Testing platform | 1: development <br />2: development, wsj <br />3: development, wsj, brown </br> |     y |     y |     y |     y | 
+|     -ltw | CoNLL labeled training words file |               - |     y |     y |     y |     y | 
+|     -lts | CoNLL labeled training constituency parse file |               - |     y |     y |     y |     y | 
+|     -ltd | CoNLL labeled training dependency syntax file |               - |     y |     y |     y |     y | 
+|     -ltp | CoNLL labeled training propositions file |               - |     y |     y |     y |     y | 
+|     -utd | CoNLL unlabeled training data file |               - |     y |     y |     y |     y | 
+|    -utds | CoNLL unlabeled training dependency file |               - |     y |     y |     y |     y | 
+|   -twsjw | CoNLL wsj test words file |               - |     y |     y |     y |     y | 
+|   -twsjs | CoNLL wsj test constituency parse file |               - |     y |     y |     y |     y | 
+|   -twsjd | CoNLL wsj test dependency syntax file |               - |     y |     y |     y |     y | 
+|   -twsjp | CoNLL training proposition file |               - |     y |     y |     y |     y | 
+|   -dwsjw | CoNLL development words file |               - |     y |     y |     y |     y | 
+|   -dwsjs | CoNLL development constituency parse file |               - |     y |     y |     y |     y | 
+|   -dwsjd | CoNLL development dependency syntax file |               - |     y |     y |     y |     y | 
+|   -dwsjp | CoNLL development proposition file |               - |     y |     y |     y |     y | 
+|   -tbrww | CoNLL brown test words file |               - |     y |     y |     y |     y | 
+|   -tbrws | CoNLL brown test constituency parse file  |               - |     y |     y |     y |     y | 
+|   -tbrwd | CoNLL brown test dependency syntax file |               - |     y |     y |     y |     y | 
+|   -tbrwp | CoNLL brown test proposition file |               - |     y |     y |     y |     y | 
 
